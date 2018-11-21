@@ -1,0 +1,12 @@
+---
+
+- name: Codar.info - Configuração do Cluster k8s (Staging)
+  
+  hosts:
+    - cluster-k8s
+  
+  remote_user: root
+  become: yes
+
+  roles:
+    - {role: common, tags: common}

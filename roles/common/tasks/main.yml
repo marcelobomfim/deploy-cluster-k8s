@@ -1,0 +1,9 @@
+---
+
+- name: Programas Essenciais
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ install_packages }}"
+  when: (ansible_os_family ==  "RedHat") and
+        (ansible_distribution_version >= 6)

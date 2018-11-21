@@ -1,0 +1,15 @@
+---
+
+install_packages:
+  - vim
+  - net-tools
+  - bind-utils
+  - yum-utils
+  - policycoreutils-python
+  - iptables-services
+  - iptables-utils
+  - tcpdump
+  - nc
+  - tree
+  - curl
+  - wget

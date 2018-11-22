@@ -1,9 +1,4 @@
 ---
 
-- name: Programas Essenciais
-  yum:
-    name: "{{ item }}"
-    state: present
-  loop: "{{ install_packages }}"
-  when: (ansible_os_family ==  "RedHat") and
-        (ansible_distribution_version >= 6)
+- include: install_packages.yml
+- include: stop_services.yml

@@ -13,3 +13,7 @@ install_packages:
   - tree
   - curl
   - wget
+
+stop_service:
+  - NetworkManager.service
+  - firewalld.service

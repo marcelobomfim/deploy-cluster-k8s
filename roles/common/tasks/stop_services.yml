@@ -1,0 +1,12 @@
+---
+
+- name: Removendo e Desabilitando Serviços
+  service:
+    name: "{{ item }}"
+    state: stopped
+    enabled: no
+  loop:
+    - "{{ stop_service }}"
+  when:
+    - ansible_os_family == "RedHat"
+    - ansible_distribution_version >= 6  

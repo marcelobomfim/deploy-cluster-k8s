@@ -10,3 +10,4 @@
 
   roles:
     - {role: common, tags: common}
+    - {role: kubernetes, tags: kubernetes, repo, selinux, packages, services, config}

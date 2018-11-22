@@ -1,5 +1,7 @@
 ---
 
+state_selinux: "disabled"
+
 install_packages:
   - vim
   - net-tools

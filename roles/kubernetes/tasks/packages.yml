@@ -18,6 +18,5 @@
   yum:
     name: "kubectl"
     state: present
-  args: "--disableexcludes=kubernetes"
   when: (ansible_os_family == "RedHat") and (ansible_distribution_version >= 6)
   tags: packages, package_kubectl

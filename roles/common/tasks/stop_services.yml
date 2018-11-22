@@ -5,8 +5,8 @@
     name: "{{ item }}"
     state: stopped
     enabled: no
-  loop:
+  with_items:
     - "{{ stop_service }}"
   when:
     - ansible_os_family == "RedHat"
-    - ansible_distribution_version >= 6  
+    - ansible_distribution_version >= 6

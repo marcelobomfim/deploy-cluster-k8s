@@ -1,4 +1,4 @@
-# **Configuração do ambiente Kubernetes Cluster com Ansible**
+# **Configuração do ambiente Kubernetes Cluster com Ansible no CentOS 7**
 
 ### **Descrição**
 

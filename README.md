@@ -52,4 +52,4 @@ ansible-playbook -i inventories/stagins/hosts -l cluster-k8s -k site.yml -C
 ansible-playbook -i inventories/stagins/hosts -l cluster-k8s -k site.yml
 ```
 
-![]("./docs/images/img1.jpg")
+![](/docs/images/img1.jpg)

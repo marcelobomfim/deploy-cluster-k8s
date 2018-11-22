@@ -4,6 +4,7 @@
   yum:
     name: "kubeadm"
     state: present
+    disable_excludes: "kubernetes"
   when: (ansible_os_family == "RedHat") and (ansible_distribution_version >= 6)
   tags: packages, package_kubeadm
 
@@ -11,6 +12,7 @@
   yum:
     name: "kubelet"
     state: present
+    disable_excludes: "kubernetes"
   when: (ansible_os_family == "RedHat") and (ansible_distribution_version >= 6)
   tags: packages, package_kubelet
 
@@ -18,5 +20,6 @@
   yum:
     name: "kubectl"
     state: present
+    disable_excludes: "kubernetes"
   when: (ansible_os_family == "RedHat") and (ansible_distribution_version >= 6)
   tags: packages, package_kubectl
